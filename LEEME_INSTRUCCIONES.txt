@@ -1,0 +1,73 @@
+21 PROYECTOS INMOBILIARIOS, S.A. — DEMO WEB BELLAS LUCES
+========================================================
+
+INICIO RÁPIDO
+1. Abra index.html en su navegador para ver la demostración.
+2. Suba TODOS los archivos y carpetas a la raíz de su repositorio GitHub Pages.
+3. No borre la carpeta assets. Las imágenes, los logos y el PDF son locales.
+4. No necesita instalar nada: HTML + CSS + JavaScript puro, sin dependencias CDN.
+
+CONTENIDO
+- index.html: sitio de una página con secciones de proyecto, residencias,
+  galería, planos, ubicación, preguntas y formulario de prospectos.
+- styles.css: diseño responsive, animaciones, modo oscuro y claro.
+- app.js: traducciones ES/EN, galería, ventanas de modelos, formulario y WhatsApp.
+- config.js: datos de contacto y conexión a Google Sheets para personalizar.
+- assets/logos/: dos logos vectoriales adaptados a los estilos azules compartidos;
+  también se incluyen las referencias recortadas del tablero enviado.
+- assets/images/: renders y planos de la presentación original, optimizados WebP.
+- assets/documents/: PDF ORIGINAL, 35 páginas, para descargar desde la web.
+- integraciones/google-sheets/Code.gs: receptor de prospectos.
+
+ACTIVAR BASE DE PROSPECTOS EN GOOGLE SHEETS (NECESARIO PARA ENVIAR)
+1. Abra una hoja de cálculo NUEVA de Google Sheets de la empresa.
+2. En Extensiones > Apps Script, pegue el contenido de
+   integraciones/google-sheets/Code.gs en el archivo Code.gs. Guarde.
+3. Si el script se abrió DENTRO de la hoja, deje SPREADSHEET_ID vacío.
+   Si es un script independiente, escriba el ID en SETTINGS.SPREADSHEET_ID.
+4. Implementar > Nueva implementación > Aplicación web.
+   Ejecutar como: usted (propietario de la hoja).
+   Quién tiene acceso: Cualquier persona.
+5. Autorice el acceso a la hoja, copie el URL que termina en /exec.
+6. Abra config.js y coloque ese URL entre comillas en appsScriptUrl.
+7. Suba los archivos actualizados. Haga una consulta real de prueba
+   y verifique que se creó la pestaña 'Prospectos Bellas Luces'.
+8. Revise permisos: sólo el personal comercial autorizado debe tener
+   acceso a los datos y la cuenta Google. Configure controles anti-spam
+   adicionales antes de una campaña de publicidad de alto volumen.
+
+IMPORTANTE: sin la URL Apps Script, la web es DEMOSTRACIÓN. El formulario
+advierte al visitante que NO se envió ni guardó su consulta. No se finge envío.
+
+ACTIVAR WHATSAPP Y DATOS EMPRESARIALES
+- En config.js ingrese whatsappNumber (ejemplo de formato 502XXXXXXXX),
+  phoneDisplay, email, y links de Facebook, Instagram y TikTok reales.
+- Cuando se configure WhatsApp aparecerá el icono flotante con mensaje listo.
+- El email y enlaces sociales sólo aparecen cuando haya datos reales.
+- No se inventaron teléfonos, correo, precios, fechas, cuotas ni inventario.
+
+PUBLICACIÓN, SEO Y VISTA PREVIA EN WHATSAPP
+- Configure un dominio HTTPS en GitHub Pages y póngalo en publicUrl de config.js.
+- En index.html cambie og:image y twitter:image a la URL ABSOLUTA:
+  https://SU-DOMINIO/assets/images/og-bellas-luces.jpg
+- Agregue también <link rel="canonical" href="https://SU-DOMINIO/"> en <head>.
+- Actualice robots.txt/sitemap.xml sólo después de confirmar el dominio.
+- La portada para WhatsApp existe en assets/images/og-bellas-luces.jpg
+  y está compuesta con un render REAL del material proporcionado.
+- Las características y medidas provienen de los planos arquitectónicos.
+  Son componentes individuales y no se anuncian como metraje total.
+
+ANTES DE ENTREGAR AL CLIENTE
+- Confirmar el uso comercial y los permisos de la presentación de
+  S.oN Arquitectura (incluida en el material facilitado por el cliente).
+- Confirmar si '21' integra el nombre comercial oficial o es sólo su marca.
+- Confirmar dirección exacta/punto de acceso del desarrollo y citas de visita.
+- Confirmar inventario, precios, acabados, construcción, financiamiento,
+  licencias, planos finales, teléfonos, correo, horarios y redes sociales.
+- Validar aviso de privacidad y retención de datos con el responsable legal.
+
+La presentación descargable contiene créditos y contactos de SU ESTUDIO
+DE ARQUITECTURA, no de Proyectos Inmobiliarios, S.A. No se han utilizado
+esos teléfonos como contactos comerciales del desarrollador.
+
+Este sitio representa un concepto de proyecto. No es una oferta contractual.

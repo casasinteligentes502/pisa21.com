@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es-GT" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102943">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Proyectos Inmobiliarios, S.A.">
+  <meta name="description" content="Conoce Bellas Luces, una propuesta residencial de arquitectura contemporánea en Santa Catarina Pinula, Guatemala. Explora diseños, planos y renders y solicita información.">
+  <meta name="keywords" content="Bellas Luces, Santa Catarina Pinula, proyectos inmobiliarios Guatemala, residencias Bellas Luces, diseño arquitectónico, casas Santa Catarina Pinula, arquitectura residencial">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:site_name" content="21 Proyectos Inmobiliarios">
+  <meta property="og:title" content="Bellas Luces | 21 Proyectos Inmobiliarios">
+  <meta property="og:description" content="Arquitectura que transforma el modo de vivir. Explora el concepto residencial Bellas Luces en Santa Catarina Pinula.">
+  <!-- IMPORTANTE: Reemplazar por https://TU-DOMINIO/assets/images/og-bellas-luces.jpg al publicar. -->
+  <meta property="og:image" content="assets/images/og-bellas-luces.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Proyectos Inmobiliarios — Desarrollo residencial Bellas Luces">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bellas Luces | 21 Proyectos Inmobiliarios">
+  <meta name="twitter:image" content="assets/images/og-bellas-luces.jpg">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="geo.region" content="GT-GU">
+  <meta name="geo.placename" content="Bellas Luces, Santa Catarina Pinula, Guatemala">
+  <link rel="icon" type="image/png" href="assets/icons/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/images/masterplan-vista-general.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bellas Luces | 21 Proyectos Inmobiliarios — Santa Catarina Pinula</title>
+  <script src="config.js"></script>
+  <script defer src="app.js"></script>
+  <script id="structured-data" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Proyectos Inmobiliarios, S.A.","alternateName":"21 Proyectos Inmobiliarios","areaServed":{"@type":"Place","name":"Santa Catarina Pinula, Guatemala"}},{"@type":"Place","name":"Bellas Luces","address":{"@type":"PostalAddress","addressLocality":"Santa Catarina Pinula","addressRegion":"Guatemala","addressCountry":"GT"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Dónde se encuentra Bellas Luces?","acceptedAnswer":{"@type":"Answer","text":"En el sector Bellas Luces de Santa Catarina Pinula, Guatemala, después de El Pueblito."}},{"@type":"Question","name":"¿Qué modelos aparecen en el proyecto?","acceptedAnswer":{"@type":"Answer","text":"Viviendas A, B, C, D, E, F y G, organizadas en cuatro grupos de distribución arquitectónica."}},{"@type":"Question","name":"¿Puedo descargar los planos?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay planos seleccionados en la página y una presentación arquitectónica de 35 páginas descargable en PDF."}},{"@type":"Question","name":"¿Cuáles son los precios y la disponibilidad?","acceptedAnswer":{"@type":"Answer","text":"La presentación es conceptual y no establece precios ni inventario disponible. Consulte condiciones comerciales verificadas con el desarrollador."}}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+  <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner container-wide">
+      <a class="brand" href="#inicio" aria-label="21 Proyectos Inmobiliarios — Inicio" id="brand-logo">
+        <img class="brand__logo brand__logo--light" src="assets/logos/logo-21-blanco-dorado.svg" width="248" height="86" alt="21 Proyectos Inmobiliarios">
+        <img class="brand__logo brand__logo--dark" src="assets/logos/logo-21-azul-dorado.svg" width="248" height="86" alt="" aria-hidden="true">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#concepto" data-i18n="navConcept">El concepto</a>
+        <a href="#residencias" data-i18n="navHomes">Residencias</a>
+        <a href="#galeria" data-i18n="navGallery">Galería</a>
+        <a href="#ubicacion" data-i18n="navLocation">Ubicación</a>
+        <a href="#preguntas" data-i18n="navFaq">Preguntas</a>
+      </nav>
+      <div class="site-actions">
+        <div class="language-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" class="language-option is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="language-option" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Cambiar modo claro u oscuro" title="Modo claro / oscuro">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5 8.6 8.6 0 1 0 20.5 13.2Z"/></svg>
+        </button>
+        <a class="btn btn--gold btn--header" href="#contacto"><span data-i18n="navCTA">Solicitar información</span><span aria-hidden="true">↗</span></a>
+        <button id="mobile-toggle" class="mobile-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="container-wide hero__content">
+        <p class="eyebrow hero__eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">BELLAS LUCES · SANTA CATARINA PINULA</span></p>
+        <h1 id="hero-title" class="hero__title"><span data-i18n="heroTitle1">El lugar donde</span><br><em data-i18n="heroTitle2">comienza lo extraordinario.</em></h1>
+        <p class="hero__description" data-i18n="heroDesc">Una propuesta residencial de arquitectura contemporánea, espacios bien pensados y una nueva perspectiva de hogar en Bellas Luces.</p>
+        <div class="hero__buttons">
+          <a class="btn btn--gold btn--large" href="#residencias"><span data-i18n="heroExplore">Descubrir las residencias</span><span aria-hidden="true">↗</span></a>
+          <a class="btn btn--outline-light btn--large" href="#contacto"><span data-i18n="heroConsult">Solicitar asesoría</span><span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero__meta"><span class="hero__meta-line"></span><span data-i18n="heroMeta">Diseño conceptual · Primera fase</span></div>
+      </div>
+      <div class="hero__side-note" aria-hidden="true">21 / PROYECTOS INMOBILIARIOS</div>
+      <a href="#concepto" class="hero__scroll" aria-label="Desplazarse para descubrir el proyecto"><span data-i18n="discover">DESCUBRIR</span><span class="scroll-line" aria-hidden="true"></span></a>
+      <div class="hero__counter" aria-hidden="true"><span>01</span><span class="hero__counter-line"></span><span>05</span></div>
+    </section>
+
+    <div class="value-bar" aria-label="Características de la propuesta">
+      <div class="container-wide value-bar__inner"><span data-i18n="bar1">Arquitectura contemporánea</span><i></i><span data-i18n="bar2">Espacios y áreas exteriores</span><i></i><span data-i18n="bar3">Bellas Luces, Guatemala</span></div>
+    </div>
+
+    <section id="concepto" class="section concept-section">
+      <div class="container-wide concept-layout">
+        <div class="concept-copy reveal">
+          <p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="conceptEyebrow">UN LUGAR PARA IMAGINAR TU FUTURO</span></p>
+          <h2 class="section-title" data-i18n-html="conceptTitle">No es solo un espacio.<br><em>Es tu próxima historia.</em></h2>
+          <p class="lead" data-i18n="conceptLead">Bellas Luces es una propuesta de desarrollo residencial que combina volúmenes contemporáneos, luz natural y conexiones con el entorno.</p>
+          <p class="body-copy" data-i18n="conceptText">Su presentación arquitectónica contempla distintas configuraciones de vivienda, con áreas sociales, espacios familiares y soluciones exteriores que varían según cada modelo.</p>
+          <div class="concept-highlights">
+            <div><span class="highlight-icon">✦</span><span data-i18n="conceptChip1">Diseño de carácter contemporáneo</span></div>
+            <div><span class="highlight-icon">✦</span><span data-i18n="conceptChip2">Plantas arquitectónicas detalladas</span></div>
+            <div><span class="highlight-icon">✦</span><span data-i18n="conceptChip3">Modelos con jardines y pérgolas</span></div>
+          </div>
+          <a class="text-link" href="#galeria"><span data-i18n="conceptLink">Conocer el proyecto por dentro</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="concept-visual reveal reveal--delayed">
+          <div class="concept-visual__image-wrap"><img src="assets/images/residencias-abc-balcon.webp" loading="lazy" width="1492" height="1054" alt="Render conceptual de una fachada contemporánea con ventanales, madera y jardines de Bellas Luces" data-alt-es="Render conceptual de una fachada contemporánea con ventanales, madera y jardines de Bellas Luces" data-alt-en="Conceptual rendering of a contemporary facade with large windows, wood, and gardens at Bellas Luces"></div>
+          <div class="concept-visual__seal"><img src="assets/logos/isotipo-21-marco.svg" alt="Emblema 21" width="88" height="88"><span data-i18n="conceptSeal">Diseñado para una nueva manera de vivir</span></div>
+          <span class="concept-visual__label" data-i18n="renderLabel">RENDER CONCEPTUAL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="Filosofía de diseño">
+      <div class="statement__image" aria-hidden="true"></div>
+      <div class="statement__overlay"></div>
+      <div class="container-wide statement__inner reveal"><p data-i18n="statementEyebrow">UNA VISIÓN ARQUITECTÓNICA</p><h2 data-i18n-html="statementTitle">Espacios que se sienten.<br><em>Detalles que permanecen.</em></h2></div>
+    </section>
+
+    <section id="residencias" class="section residences-section">
+      <div class="container-wide">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="resEyebrow">EXPLORA LAS PROPUESTAS</span></p><h2 class="section-title" data-i18n-html="resTitle">Una arquitectura.<br><em>Diferentes formas de vivir.</em></h2></div>
+          <p data-i18n="resIntro">Explora las agrupaciones arquitectónicas presentes en la primera fase del concepto. Cada propuesta tiene su propia distribución y relación con los espacios exteriores.</p>
+        </div>
+        <div class="residences-grid">
+          <article class="res-card reveal" data-model="abc"><button class="res-card__image-button" type="button" data-open-model="abc" aria-label="Ver residencia A B C"><img src="assets/images/residencias-abc-acceso.webp" loading="lazy" width="1672" height="941" alt="Fachada de residencias A, B y C, Bellas Luces"><span class="res-card__arrow" aria-hidden="true">↗</span></button><div class="res-card__body"><div class="res-card__heading"><p data-i18n="resType">PROPUESTA ARQUITECTÓNICA</p><h3 data-i18n="resABC">Casas A / B / C</h3></div><p data-i18n="resABCdesc">Áreas sociales generosas y un jardín privado integrado a la propuesta.</p><div class="res-card__details"><span data-i18n="resABCstat1">Jardín proyectado: 71.70 m²</span><span data-i18n="resABCstat2">Sala / comedor: 63 m²</span></div><button class="text-link" type="button" data-open-model="abc"><span data-i18n="resDetails">Ver detalle y planos</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="res-card reveal reveal--delayed" data-model="d"><button class="res-card__image-button" type="button" data-open-model="d" aria-label="Ver residencia D"><img src="assets/images/residencia-d-principal.webp" loading="lazy" width="1672" height="941" alt="Render exterior de la residencia D en Bellas Luces"><span class="res-card__arrow" aria-hidden="true">↗</span></button><div class="res-card__body"><div class="res-card__heading"><p data-i18n="resType">PROPUESTA ARQUITECTÓNICA</p><h3 data-i18n="resD">Casa D</h3></div><p data-i18n="resDdesc">Un diseño que destaca la integración de áreas interiores con jardín y pérgola.</p><div class="res-card__details"><span data-i18n="resDstat1">Jardín proyectado: 150 m²</span><span data-i18n="resDstat2">Pérgola proyectada: 59 m²</span></div><button class="text-link" type="button" data-open-model="d"><span data-i18n="resDetails">Ver detalle y planos</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="res-card reveal" data-model="e"><button class="res-card__image-button" type="button" data-open-model="e" aria-label="Ver residencia E"><img src="assets/images/residencia-e-fachada.webp" loading="lazy" width="1672" height="941" alt="Fachada conceptual de la residencia E en Bellas Luces"><span class="res-card__arrow" aria-hidden="true">↗</span></button><div class="res-card__body"><div class="res-card__heading"><p data-i18n="resType">PROPUESTA ARQUITECTÓNICA</p><h3 data-i18n="resE">Casa E</h3></div><p data-i18n="resEdesc">Una propuesta de espacios sociales conectados con pérgola y garaje en nivel inferior.</p><div class="res-card__details"><span data-i18n="resEstat1">Pérgola proyectada: 50 m²</span><span data-i18n="resEstat2">Área de garaje: 85 m²</span></div><button class="text-link" type="button" data-open-model="e"><span data-i18n="resDetails">Ver detalle y planos</span><span aria-hidden="true">↗</span></button></div></article>
+          <article class="res-card reveal reveal--delayed" data-model="fg"><button class="res-card__image-button" type="button" data-open-model="fg" aria-label="Ver residencias F y G"><img src="assets/images/residencias-fg-fachada.webp" loading="lazy" width="1672" height="941" alt="Vista de residencias F y G, Bellas Luces"><span class="res-card__arrow" aria-hidden="true">↗</span></button><div class="res-card__body"><div class="res-card__heading"><p data-i18n="resType">PROPUESTA ARQUITECTÓNICA</p><h3 data-i18n="resFG">Casas F / G</h3></div><p data-i18n="resFGdesc">Diseño con área social, pérgola y opciones de espacios exteriores según plano.</p><div class="res-card__details"><span data-i18n="resFGstat1">Pérgola proyectada: 60 m²</span><span data-i18n="resFGstat2">Jardín proyectado: 30 m²</span></div><button class="text-link" type="button" data-open-model="fg"><span data-i18n="resDetails">Ver detalle y planos</span><span aria-hidden="true">↗</span></button></div></article>
+        </div>
+        <p class="disclaimer" data-i18n="resDisclaimer">Las áreas citadas corresponden a componentes específicos de los planos conceptuales; no representan el metraje total de la vivienda. Distribuciones e imágenes sujetas a revisión y confirmación.</p>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery-section">
+      <div class="container-wide">
+        <div class="gallery-header reveal"><div><p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="galleryEyebrow">IMAGINA CADA DETALLE</span></p><h2 class="section-title" data-i18n-html="galleryTitle">Una mirada al <em>futuro.</em></h2></div><div class="gallery-filters" role="group" aria-label="Tipo de galería"><button type="button" class="filter-btn is-active" data-gallery="renders" aria-pressed="true" data-i18n="filterRenders">Renders</button><button type="button" class="filter-btn" data-gallery="plans" aria-pressed="false" data-i18n="filterPlans">Planos</button></div></div>
+        <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+        <p class="disclaimer" data-i18n="galleryDisclaimer">Imágenes de la presentación de diseño conceptual. Son ilustrativas y pueden variar respecto a una construcción definitiva.</p>
+      </div>
+    </section>
+
+    <section id="presentacion" class="dossier-section">
+      <div class="container-wide dossier-layout">
+        <div class="dossier-cover reveal"><img src="assets/images/residencia-d-atardecer.webp" loading="lazy" alt="Render conceptual de la vivienda D, imagen de portada del dossier" width="1494" height="1053"><div class="dossier-cover__shade"></div><div class="dossier-cover__overlay"><span>21 <span class="little-gold">/</span> BELLAS LUCES</span><strong data-i18n-html="dossierCover">Vivir<br>es imaginar</strong><small data-i18n="dossierBadge">DOSSIER ARQUITECTÓNICO</small></div></div>
+        <div class="dossier-copy reveal reveal--delayed"><p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="dossierEyebrow">EL PROYECTO EN TUS MANOS</span></p><h2 class="section-title" data-i18n-html="dossierTitle">Descubre el proyecto,<br><em>a tu propio ritmo.</em></h2><p class="lead" data-i18n="dossierDesc">Explora la presentación arquitectónica original con el plano general, distribuciones por nivel, elevaciones y renders de las residencias.</p><div class="dossier-info"><div><strong data-i18n="dossierFile">Presentación arquitectónica</strong><span data-i18n="dossierFormat">PDF · 35 páginas · archivo original</span></div><span class="dossier-icon" aria-hidden="true">↓</span></div><a class="btn btn--gold btn--large dossier-btn" href="assets/documents/Bellas-Luces-Presentacion-Arquitectonica.pdf" target="_blank" rel="noopener" download="Bellas-Luces-Presentacion-Arquitectonica.pdf"><span data-i18n="downloadPDF">Descargar presentación PDF</span><span aria-hidden="true">↓</span></a><p class="dossier-credit" data-i18n="dossierCredit">Material conceptual atribuido a S.oN Arquitectura en la presentación original.</p></div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="section location-section">
+      <div class="container-wide location-layout">
+        <div class="location-copy reveal"><p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="locationEyebrow">CONECTADO CON TU PRÓXIMO HOGAR</span></p><h2 class="section-title" data-i18n-html="locationTitle">Bellas Luces.<br><em>Tu próximo destino.</em></h2><p class="lead" data-i18n="locationLead">El proyecto se ubica en el sector Bellas Luces, Santa Catarina Pinula, Guatemala, después de El Pueblito.</p><div class="address-card"><span class="address-card__pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><strong>Bellas Luces</strong><span data-i18n="address">Santa Catarina Pinula, Guatemala · después de El Pueblito</span></div></div><a class="text-link" href="https://maps.app.goo.gl/db6A1wwnMBMN5NWh9" target="_blank" rel="noopener noreferrer"><span data-i18n="locationMap">Abrir ubicación en Google Maps</span><span aria-hidden="true">↗</span></a><p class="disclaimer" data-i18n="locationNote">La referencia del mapa corresponde al sector Bellas Luces; la ubicación exacta del desarrollo y las indicaciones de visita deben confirmarse con el equipo comercial.</p></div>
+        <div class="map-frame reveal reveal--delayed"><iframe title="Mapa de Bellas Luces en Santa Catarina Pinula" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Condominio%20Bellas%20Luces%2C%20Santa%20Catarina%20Pinula%2C%20Guatemala&output=embed" allowfullscreen></iframe><div class="map-frame__bottom"><span data-i18n="mapCaption">SANTA CATARINA PINULA · GUATEMALA</span><a href="https://maps.app.goo.gl/db6A1wwnMBMN5NWh9" target="_blank" rel="noopener noreferrer" data-i18n="mapDirections">Ver ruta ↗</a></div></div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="section faq-section"><div class="container-wide faq-layout"><div class="faq-intro reveal"><p class="eyebrow eyebrow--gold"><span class="eyebrow-line"></span><span data-i18n="faqEyebrow">RESOLVEMOS TUS DUDAS</span></p><h2 class="section-title" data-i18n-html="faqTitle">El inicio de una<br><em>gran decisión.</em></h2><p data-i18n="faqIntro">La información disponible procede de la propuesta arquitectónica. Para condiciones comerciales, nuestro equipo podrá orientarte una vez confirmadas.</p><a class="text-link" href="#contacto"><span data-i18n="faqLink">Hablar con un asesor</span><span aria-hidden="true">↗</span></a></div><div class="faq-list reveal reveal--delayed"><details><summary data-i18n="faq1Q">¿Dónde se encuentra Bellas Luces?</summary><p data-i18n="faq1A">En el sector Bellas Luces de Santa Catarina Pinula, Guatemala, después de El Pueblito. La referencia de acceso se incluye en el mapa.</p></details><details><summary data-i18n="faq2Q">¿Qué modelos aparecen en el proyecto?</summary><p data-i18n="faq2A">El concepto presenta viviendas identificadas como A, B, C, D, E, F y G, organizadas en cuatro grupos de distribución arquitectónica.</p></details><details><summary data-i18n="faq3Q">¿Puedo revisar los planos antes de una visita?</summary><p data-i18n="faq3A">Sí. Puedes explorar una selección de planos en esta página y descargar sin costo la presentación arquitectónica completa de 35 páginas.</p></details><details><summary data-i18n="faq4Q">¿Cuáles son los precios y la disponibilidad?</summary><p data-i18n="faq4A">La presentación proporcionada es de diseño conceptual y no establece precios, fechas de entrega ni inventario disponible. Solicita información para recibir una actualización comercial cuando esté confirmada.</p></details></div></div></section>
+
+    <section id="contacto" class="contact-section"><div class="container-wide contact-layout"><div class="contact-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">COMIENZA TU PRÓXIMO CAPÍTULO</span></p><h2 data-i18n-html="contactTitle">El hogar que imaginas<br><em>merece una conversación.</em></h2><p data-i18n="contactDesc">Cuéntanos un poco de ti y del modelo que más te interesa. Un asesor podrá utilizar esta información para orientarte sobre los siguientes pasos.</p><div class="contact-feature"><span aria-hidden="true">✦</span><span data-i18n="contactFeature1">Atención inicial personalizada</span></div><div class="contact-feature"><span aria-hidden="true">✦</span><span data-i18n="contactFeature2">Información sobre el proyecto y sus propuestas</span></div><div class="contact-feature"><span aria-hidden="true">✦</span><span data-i18n="contactFeature3">Sin compromiso de compra</span></div><div class="contact-mark"><img src="assets/logos/isotipo-21-marco.svg" width="84" height="84" alt="Isotipo corporativo 21"><div><span>21</span><small>PROYECTOS INMOBILIARIOS, S.A.</small></div></div></div>
+      <div class="lead-form-card reveal reveal--delayed"><div class="form-heading"><div><span class="form-topline" data-i18n="formEyebrow">SOLICITA INFORMACIÓN</span><h3 data-i18n="formTitle">Conversemos sobre tu futuro hogar</h3></div><span class="form-heading__star" aria-hidden="true">✳</span></div>
+        <form id="lead-form" novalidate action="#" method="post" autocomplete="on">
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
+          <div class="form-row"><div class="field"><label for="firstName" data-i18n="formName">Nombre *</label><input id="firstName" name="firstName" autocomplete="given-name" required minlength="2" maxlength="70" placeholder="Tu nombre" data-placeholder-es="Tu nombre" data-placeholder-en="First name"></div><div class="field"><label for="lastName" data-i18n="formLastname">Apellido *</label><input id="lastName" name="lastName" autocomplete="family-name" required minlength="2" maxlength="70" placeholder="Tu apellido" data-placeholder-es="Tu apellido" data-placeholder-en="Last name"></div></div>
+          <div class="form-row"><div class="field"><label for="phone" data-i18n="formPhone">WhatsApp / teléfono *</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required minlength="8" maxlength="24" placeholder="+502 0000 0000" data-placeholder-es="+502 0000 0000" data-placeholder-en="+502 0000 0000"></div><div class="field"><label for="email" data-i18n="formEmail">Correo electrónico *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="nombre@correo.com" data-placeholder-es="nombre@correo.com" data-placeholder-en="name@email.com"></div></div>
+          <div class="field"><label for="model" data-i18n="formModel">¿Qué propuesta te interesa? *</label><select id="model" name="model" required><option value="" data-i18n="formSelect">Selecciona una opción</option><option value="abc" data-i18n="modelABC">Casas A / B / C</option><option value="d" data-i18n="modelD">Casa D</option><option value="e" data-i18n="modelE">Casa E</option><option value="fg" data-i18n="modelFG">Casas F / G</option><option value="general" data-i18n="modelGeneral">Conocer todo el proyecto</option></select></div>
+          <div class="form-row"><div class="field"><label for="timeline" data-i18n="formTimeline">¿Cuándo te gustaría avanzar?</label><select id="timeline" name="timeline"><option value="" data-i18n="formOptional">Prefiero conversarlo</option><option value="0-3" data-i18n="timelineSoon">En los próximos 3 meses</option><option value="3-6" data-i18n="timelineMedium">Entre 3 y 6 meses</option><option value="6-12" data-i18n="timelineLong">Entre 6 y 12 meses</option><option value="exploring" data-i18n="timelineExplore">Estoy explorando opciones</option></select></div><div class="field"><label for="budget" data-i18n="formBudget">Presupuesto estimado (opcional)</label><select id="budget" name="budget"><option value="" data-i18n="formOptional">Prefiero conversarlo</option><option value="lt1m" data-i18n="budget1">Menos de Q1 millón</option><option value="1to2m" data-i18n="budget2">Q1 a Q2 millones</option><option value="2to3m" data-i18n="budget3">Q2 a Q3 millones</option><option value="gt3m" data-i18n="budget4">Más de Q3 millones</option></select></div></div>
+          <div class="field"><label for="message" data-i18n="formMessage">¿Qué te gustaría saber? (opcional)</label><textarea id="message" name="message" rows="3" maxlength="900" placeholder="Cuéntanos qué buscas en tu próximo hogar…" data-placeholder-es="Cuéntanos qué buscas en tu próximo hogar…" data-placeholder-en="Tell us what you're looking for in your next home…"></textarea></div>
+          <label class="consent"><input type="checkbox" id="consent" name="consent" required><span data-i18n-html="formConsent">Autorizo que Proyectos Inmobiliarios, S.A. utilice mis datos para responder a esta consulta. <a href="#privacidad" data-open-privacy>Ver aviso de privacidad.</a> *</span></label>
+          <p id="form-status" class="form-status" aria-live="polite" role="status"></p>
+          <button class="btn btn--gold btn--submit" type="submit" id="form-submit"><span data-i18n="formSubmit">Enviar mi solicitud</span><span aria-hidden="true">↗</span></button>
+          <p class="form-footnote" data-i18n="formFootnote">Tus datos se utilizarán únicamente para atender esta consulta. El envío real se habilita al conectar el formulario con Google Sheets.</p>
+        </form>
+        <iframe name="lead-receiver" id="lead-receiver" title="Recepción de formulario" class="receiver-frame" aria-hidden="true"></iframe>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="container-wide"><div class="footer-top"><div class="footer-brand"><img class="footer-brand__logo" src="assets/logos/logo-21-blanco-dorado.svg" alt="21 Proyectos Inmobiliarios" width="300" height="104"><p data-i18n="footerIntro">Arquitectura con visión. Espacios con propósito.</p></div><div class="footer-links"><h3 data-i18n="footerNavigate">Explorar</h3><a href="#concepto" data-i18n="navConcept">El concepto</a><a href="#residencias" data-i18n="navHomes">Residencias</a><a href="#galeria" data-i18n="navGallery">Galería</a><a href="#presentacion" data-i18n="footerDossier">Presentación PDF</a></div><div class="footer-links"><h3 data-i18n="footerContact">Contacto</h3><a href="#contacto" data-i18n="navCTA">Solicitar información</a><a href="https://maps.app.goo.gl/db6A1wwnMBMN5NWh9" target="_blank" rel="noopener noreferrer">Bellas Luces, Santa Catarina Pinula ↗</a><div id="footer-socials" class="social-links"></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Proyectos Inmobiliarios, S.A.</span><span data-i18n="footerNote">Visualización conceptual. Información comercial sujeta a confirmación.</span><button type="button" id="share-button" class="footer-share"><span data-i18n="share">Compartir esta página</span> ↗</button></div></div></footer>
+
+  <a class="float-cta" href="#contacto" id="float-cta" aria-label="Solicitar información sobre el proyecto"><span class="float-cta__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-8h6v8"/></svg></span><span class="float-cta__label" data-i18n="floating">Solicitar información</span></a>
+
+  <dialog id="image-dialog" class="image-dialog" aria-label="Visualización ampliada"><button type="button" class="dialog-close" data-close-dialog aria-label="Cerrar">×</button><button class="gallery-prev" type="button" id="lightbox-prev" aria-label="Imagen anterior">←</button><figure><img id="lightbox-image" alt="Imagen ampliada"><figcaption id="lightbox-caption"></figcaption></figure><button class="gallery-next" type="button" id="lightbox-next" aria-label="Imagen siguiente">→</button></dialog>
+  <dialog id="model-dialog" class="model-dialog" aria-labelledby="model-dialog-title"><button class="dialog-close" type="button" data-close-dialog aria-label="Cerrar">×</button><div id="model-dialog-body"></div></dialog>
+  <dialog id="privacy-dialog" class="info-dialog" aria-labelledby="privacy-title"><button class="dialog-close" type="button" data-close-dialog aria-label="Cerrar">×</button><div class="info-dialog__body"><h2 id="privacy-title" data-i18n="privacyTitle">Aviso de privacidad</h2><p data-i18n="privacyText1">Proyectos Inmobiliarios, S.A. solicita nombre, teléfono, correo y preferencias inmobiliarias para responder tu solicitud de información sobre Bellas Luces. No se realiza un cobro ni una reserva mediante este formulario.</p><p data-i18n="privacyText2">Cuando se active el formulario, los datos se transmitirán al destino de Google Sheets configurado por la empresa. Solo personal autorizado para gestionar prospectos debería acceder a esa hoja. La empresa deberá definir su política de conservación, atención de solicitudes y datos de contacto antes de publicar.</p><button class="btn btn--gold" type="button" data-close-dialog data-i18n="privacyClose">Entendido</button></div></dialog>
+  <dialog id="notice-dialog" class="info-dialog" aria-labelledby="notice-title"><button type="button" class="dialog-close" data-close-dialog aria-label="Cerrar">×</button><div class="info-dialog__body"><span class="notice-mark" aria-hidden="true">✦</span><h2 id="notice-title"></h2><p id="notice-text"></p><button class="btn btn--gold" type="button" data-close-dialog data-i18n="noticeClose">Cerrar</button></div></dialog>
+</body>
+</html>
