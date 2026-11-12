@@ -1,0 +1,48 @@
+PUBLICAR LA WEB — GITHUB PAGES + DOMINIO GODADDY
+================================================
+ESTA VERSIÓN DEL ZIP ESTÁ PREPARADA PARA CARGA DESDE EL NAVEGADOR.
+El PDF de 35 páginas fue optimizado de 51 MB a 21 MB manteniendo
+su contenido y buena legibilidad. GitHub admite máximo 25 MiB por
+archivo desde navegador.
+
+1) DESCOMPRIME el ZIP. No subas el ZIP sin extraer.
+2) En https://github.com/new crea un repositorio PUBLICO llamado
+   bellas-luces (puedes usar otro nombre). No necesitas README inicial.
+3) Dentro del repositorio, Add file > Upload files.
+   Arrastra TODOS LOS ARCHIVOS Y CARPETAS que están dentro de la
+   carpeta extraída: index.html, app.js, styles.css, config.js,
+   assets/, integraciones/, etc. El index.html debe estar en la raíz.
+   Termina con Commit changes.
+4) En el repositorio > Settings > Pages:
+   Source: Deploy from a branch
+   Branch: main / (root)  > Save.
+5) En Settings > Pages > Custom domain escribe TU-DOMINIO.com
+   (sin https y sin www, si deseas el dominio raíz) y pulsa Save.
+   Configúralo en GitHub ANTES de crear apuntes DNS en GoDaddy.
+6) En GoDaddy > Mis productos > dominio > DNS: configura cuatro A:
+   Tipo    Nombre     Valor
+   A       @          185.199.108.153
+   A       @          185.199.109.153
+   A       @          185.199.110.153
+   A       @          185.199.111.153
+   Y un CNAME con Nombre=www, Valor=TU-USUARIO.github.io
+   (sustituye TU-USUARIO por tu usuario real de GitHub).
+   Elimina SOLO registros @ o www que entren en conflicto;
+   NO toques MX/TXT usados para correo.
+   Estos pasos aplican si tu DNS se administra en GoDaddy.
+7) Espera propagación DNS (puede tardar hasta 24 h) y activa
+   Enforce HTTPS en GitHub > Settings > Pages al estar disponible.
+8) EN config.js edita:
+   publicUrl: 'https://TU-DOMINIO.com'
+   whatsappNumber, phoneDisplay, email y redes sociales reales.
+   Para activar el formulario usa integraciones/google-sheets/Code.gs
+   según LEEME_INSTRUCCIONES.txt, y agrega la URL /exec en appsScriptUrl.
+9) En index.html cambia og:image y twitter:image de ruta relativa a
+   https://TU-DOMINIO.com/assets/images/og-bellas-luces.jpg
+   y añade <link rel="canonical" href="https://TU-DOMINIO.com/">
+
+IMPORTANTE: los dominios, el teléfono, el correo, el WhatsApp y la
+integración de prospectos NO están configurados hasta que tú los edites.
+La web no debe anunciar que los prospectos quedan guardados hasta
+probar la integración de Google Sheets. Confirmar derechos sobre
+la presentación antes de publicar el PDF comercialmente.
