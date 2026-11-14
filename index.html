@@ -28,11 +28,11 @@
   <link rel="icon" type="image/png" href="assets/icons/favicon-64.png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="preload" as="image" href="assets/images/masterplan-vista-general.webp" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261114-logo-separado-v3">
   <title>Bellas Luces | 21 Proyectos Inmobiliarios — Santa Catarina Pinula</title>
-  <script src="config.js"></script>
-  <script defer src="app.js"></script>
-  <script id="structured-data" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Proyectos Inmobiliarios, S.A.","alternateName":"21 Proyectos Inmobiliarios","areaServed":{"@type":"Place","name":"Santa Catarina Pinula, Guatemala"}},{"@type":"Place","name":"Bellas Luces","address":{"@type":"PostalAddress","addressLocality":"Santa Catarina Pinula","addressRegion":"Guatemala","addressCountry":"GT"}}]}</script>
+  <script src="config.js?v=20261113-social"></script>
+  <script defer src="app.js?v=20261113-social"></script>
+  <script id="structured-data" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Proyectos Inmobiliarios, S.A.","alternateName":"21 Proyectos Inmobiliarios","areaServed":{"@type":"Place","name":"Santa Catarina Pinula, Guatemala"},"sameAs":["https://www.facebook.com/profile.php?id=61596248382307","https://www.instagram.com/pisa21gt/"]},{"@type":"Place","name":"Bellas Luces","address":{"@type":"PostalAddress","addressLocality":"Santa Catarina Pinula","addressRegion":"Guatemala","addressCountry":"GT"}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Dónde se encuentra Bellas Luces?","acceptedAnswer":{"@type":"Answer","text":"En el sector Bellas Luces de Santa Catarina Pinula, Guatemala, después de El Pueblito."}},{"@type":"Question","name":"¿Qué modelos aparecen en el proyecto?","acceptedAnswer":{"@type":"Answer","text":"Viviendas A, B, C, D, E, F y G, organizadas en cuatro grupos de distribución arquitectónica."}},{"@type":"Question","name":"¿Puedo descargar los planos?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hay planos seleccionados en la página y una presentación arquitectónica de 35 páginas descargable en PDF."}},{"@type":"Question","name":"¿Cuáles son los precios y la disponibilidad?","acceptedAnswer":{"@type":"Answer","text":"La presentación es conceptual y no establece precios ni inventario disponible. Consulte condiciones comerciales verificadas con el desarrollador."}}]}</script>
 </head>
 <body>
@@ -176,7 +176,19 @@
     </div></section>
   </main>
 
-  <footer class="footer"><div class="container-wide"><div class="footer-top"><div class="footer-brand"><img class="footer-brand__logo" src="assets/logos/logo-21-blanco-dorado.svg" alt="21 Proyectos Inmobiliarios" width="300" height="104"><p data-i18n="footerIntro">Arquitectura con visión. Espacios con propósito.</p></div><div class="footer-links"><h3 data-i18n="footerNavigate">Explorar</h3><a href="#concepto" data-i18n="navConcept">El concepto</a><a href="#residencias" data-i18n="navHomes">Residencias</a><a href="#galeria" data-i18n="navGallery">Galería</a><a href="#presentacion" data-i18n="footerDossier">Presentación PDF</a></div><div class="footer-links"><h3 data-i18n="footerContact">Contacto</h3><a href="#contacto" data-i18n="navCTA">Solicitar información</a><a href="https://maps.app.goo.gl/db6A1wwnMBMN5NWh9" target="_blank" rel="noopener noreferrer">Bellas Luces, Santa Catarina Pinula ↗</a><div id="footer-socials" class="social-links"></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Proyectos Inmobiliarios, S.A.</span><span data-i18n="footerNote">Visualización conceptual. Información comercial sujeta a confirmación.</span><button type="button" id="share-button" class="footer-share"><span data-i18n="share">Compartir esta página</span> ↗</button></div></div></footer>
+  <footer class="footer"><div class="container-wide"><div class="footer-top"><div class="footer-brand"><img class="footer-brand__logo" src="assets/logos/logo-21-blanco-dorado.svg" alt="21 Proyectos Inmobiliarios" width="300" height="104"><p data-i18n="footerIntro">Arquitectura con visión. Espacios con propósito.</p></div><div class="footer-links"><h3 data-i18n="footerNavigate">Explorar</h3><a href="#concepto" data-i18n="navConcept">El concepto</a><a href="#residencias" data-i18n="navHomes">Residencias</a><a href="#galeria" data-i18n="navGallery">Galería</a><a href="#presentacion" data-i18n="footerDossier">Presentación PDF</a></div><div class="footer-links"><h3 data-i18n="footerContact">Contacto</h3><a href="#contacto" data-i18n="navCTA">Solicitar información</a><a href="https://maps.app.goo.gl/db6A1wwnMBMN5NWh9" target="_blank" rel="noopener noreferrer">Bellas Luces, Santa Catarina Pinula ↗</a><div class="footer-social-block">
+            <h4 data-i18n="followUs">Síguenos en</h4>
+            <div id="footer-socials" class="social-links" aria-label="Facebook / Instagram">
+              <a class="social-link social-link--facebook" data-social="facebookUrl" href="https://www.facebook.com/profile.php?id=61596248382307" target="_blank" rel="noopener noreferrer">
+                <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.65 21v-7.34h2.47l.38-2.98h-2.85V8.79c0-.86.24-1.44 1.43-1.44h1.52V4.69a20.3 20.3 0 0 0-2.21-.11c-2.2 0-3.69 1.34-3.69 3.8v2.3H8.23v2.98h2.47V21z"/></svg>
+                <span>Facebook</span><span class="social-link__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="social-link social-link--instagram" data-social="instagramUrl" href="https://www.instagram.com/pisa21gt/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.45" cy="6.55" r="1.2" fill="currentColor"/></svg>
+                <span>Instagram</span><span class="social-link__arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Proyectos Inmobiliarios, S.A.</span><span data-i18n="footerNote">Visualización conceptual. Información comercial sujeta a confirmación.</span><button type="button" id="share-button" class="footer-share"><span data-i18n="share">Compartir esta página</span> ↗</button></div></div></footer>
 
   <a class="float-cta" href="#contacto" id="float-cta" aria-label="Solicitar información sobre el proyecto"><span class="float-cta__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-8h6v8"/></svg></span><span class="float-cta__label" data-i18n="floating">Solicitar información</span></a>
 

@@ -44,3 +44,33 @@ dialog{border:0;padding:0;color:#eaf0f4;background:#0b2239;box-shadow:0 24px 100
 .whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.35)}
 .whatsapp-float svg{width:28px;height:28px}
 @media(max-width:610px){.whatsapp-float{right:17px;bottom:82px;width:47px;height:47px}}
+
+/* Redes oficiales de Bellas Luces: colores reconocibles, sobre la paleta corporativa. */
+.footer-social-block{margin-top:20px;width:100%}
+.footer-social-block h4{margin:0 0 13px;font-size:.77rem;letter-spacing:.12em;font-weight:750;text-transform:uppercase;color:#e4bd7f}
+.footer-social-block .social-links{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-social-block .social-links .social-link{display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:45px;padding:11px 14px;border:1px solid rgba(255,255,255,.24);border-radius:9px;text-decoration:none;font-size:.76rem;font-weight:750;line-height:1.15;letter-spacing:0;text-transform:none;color:#fff;box-shadow:0 7px 22px rgba(0,0,0,.19);transition:transform .23s var(--ease),box-shadow .23s var(--ease),filter .23s var(--ease)}
+.footer-social-block .social-links .social-link--facebook{background:#1877f2}
+.footer-social-block .social-links .social-link--instagram{background:linear-gradient(125deg,#405de6 0%,#833ab4 32%,#c13584 57%,#e1306c 77%,#fcaf45 100%)}
+.footer-social-block .social-links .social-link:hover{color:#fff;transform:translateY(-3px);box-shadow:0 12px 27px rgba(0,0,0,.28);filter:saturate(1.08)}
+.footer-social-block .social-links .social-link:focus-visible{outline:3px solid #f1d79f;outline-offset:4px}
+.social-link__icon{display:block;flex:none;width:20px;height:20px}
+.social-link__arrow{font-size:1rem;opacity:.85;margin-left:2px}
+@media(max-width:610px){.footer-social-block{margin-top:18px}.footer-social-block .social-links{align-items:stretch;flex-direction:column;gap:8px}.footer-social-block .social-links .social-link{min-height:43px;justify-content:flex-start;padding:10px 11px;width:100%;font-size:.73rem}.footer-social-block .social-link__arrow{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.footer-social-block .social-links .social-link{transition:none}.footer-social-block .social-links .social-link:hover{transform:none}}
+
+
+/* Ajuste específico para español: separa el nombre del proyecto del logo en el hero */
+html[lang="es-GT"] .hero__content{padding-top:155px}
+html[lang="es-GT"] .hero__eyebrow{margin-top:10px}
+@media(max-width:800px){html[lang="es-GT"] .hero__content{padding-top:170px}}
+@media(max-width:610px){html[lang="es-GT"] .hero__content{padding-top:150px}html[lang="es-GT"] .hero__eyebrow{margin-top:8px}}
+
+/* v3: ajuste fino de ubicación de la etiqueta del proyecto solo en español.
+   No mueve el logo, título, botones ni la vista en inglés. */
+@media (min-width: 801px) {
+  html[lang="es-GT"] .hero__eyebrow { position: relative; top: 27px; }
+}
+@media (max-width: 800px) {
+  html[lang="es-GT"] .hero__eyebrow { position: relative; top: 10px; }
+}
