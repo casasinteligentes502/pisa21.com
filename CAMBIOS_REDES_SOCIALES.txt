@@ -1,0 +1,19 @@
+ACTUALIZACIÓN — LAS 7 LUCES / PROYECTOS INMOBILIARIOS 21
+
+Se agregó una sección visible «Síguenos en» al pie de página.
+Se incorporaron botones con los colores e íconos característicos de las redes:
+Facebook: https://www.facebook.com/profile.php?id=61596248382307
+Instagram: https://www.instagram.com/pisa21gt/
+
+Los botones abren cada página en una pestaña nueva.
+Compatible con español/inglés, móviles, tabletas, equipos de escritorio, claro/oscuro.
+También se añadieron referencias sameAs para buscadores.
+
+PARA REEMPLAZAR EN GITHUB PAGES:
+Suba index.html, styles.css, app.js y config.js a la RAÍZ de su
+repositorio. Conserve los archivos assets/, las presentaciones y el resto.
+Si GitHub no muestra cambios de inmediato, actualice con Ctrl+F5.
+
+NOTA: Se respetó la configuración original del formulario de prospectos:
+no tiene URL de Apps Script, así que no almacena los datos todavía.
+No se añadió un teléfono de WhatsApp sin confirmación del cliente.

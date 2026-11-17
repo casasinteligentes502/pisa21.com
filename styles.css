@@ -1,4 +1,4 @@
-/* 21 Proyectos Inmobiliarios — Bellas Luces / diseño responsive sin dependencias */
+/* 21 Proyectos Inmobiliarios — Las 7 Luces / diseño responsive sin dependencias */
 :root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:16px;font-synthesis:none;scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;--navy:#0b2139;--navy2:#102b49;--navy3:#1b3a5b;--gold:#d5ad68;--gold-light:#f1d79f;--gold-dark:#ae8043;--paper:#f6f4ef;--cream:#ede8df;--white:#ffffff;--ease:cubic-bezier(.2,.75,.25,1);--radius:8px}
 html[data-theme="dark"]{color-scheme:dark;--bg:#0d2238;--surface:#142c44;--surface-2:#19354d;--text:#fbf7f1;--heading:#fbf7f1;--muted:#b7c3cb;--hairline:rgba(221,225,225,.16);--glass:rgba(11,31,51,.9);--card:#19334b;--input:#10273e;--light-section:#132b42;--gallery-bg:#0a1f36;--shadow:rgba(0,0,0,.25)}
 html[data-theme="light"]{color-scheme:light;--bg:#faf9f6;--surface:#f1f0ec;--surface-2:#ebe8e2;--text:#26394c;--heading:#132b43;--muted:#647282;--hairline:rgba(14,43,67,.17);--glass:rgba(250,249,246,.94);--card:#fff;--input:#f6f5f1;--light-section:#f1f0ec;--gallery-bg:#efede8;--shadow:rgba(11,33,57,.12)}
@@ -45,7 +45,7 @@ dialog{border:0;padding:0;color:#eaf0f4;background:#0b2239;box-shadow:0 24px 100
 .whatsapp-float svg{width:28px;height:28px}
 @media(max-width:610px){.whatsapp-float{right:17px;bottom:82px;width:47px;height:47px}}
 
-/* Redes oficiales de Bellas Luces: colores reconocibles, sobre la paleta corporativa. */
+/* Redes oficiales de Las 7 Luces: colores reconocibles, sobre la paleta corporativa. */
 .footer-social-block{margin-top:20px;width:100%}
 .footer-social-block h4{margin:0 0 13px;font-size:.77rem;letter-spacing:.12em;font-weight:750;text-transform:uppercase;color:#e4bd7f}
 .footer-social-block .social-links{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
@@ -60,17 +60,32 @@ dialog{border:0;padding:0;color:#eaf0f4;background:#0b2239;box-shadow:0 24px 100
 @media(prefers-reduced-motion:reduce){.footer-social-block .social-links .social-link{transition:none}.footer-social-block .social-links .social-link:hover{transform:none}}
 
 
-/* Ajuste específico para español: separa el nombre del proyecto del logo en el hero */
-html[lang="es-GT"] .hero__content{padding-top:155px}
-html[lang="es-GT"] .hero__eyebrow{margin-top:10px}
-@media(max-width:800px){html[lang="es-GT"] .hero__content{padding-top:170px}}
-@media(max-width:610px){html[lang="es-GT"] .hero__content{padding-top:150px}html[lang="es-GT"] .hero__eyebrow{margin-top:8px}}
 
-/* v3: ajuste fino de ubicación de la etiqueta del proyecto solo en español.
-   No mueve el logo, título, botones ni la vista en inglés. */
-@media (min-width: 801px) {
-  html[lang="es-GT"] .hero__eyebrow { position: relative; top: 27px; }
-}
-@media (max-width: 800px) {
-  html[lang="es-GT"] .hero__eyebrow { position: relative; top: 10px; }
-}
+/* LAS 7 LUCES — ÚNICO TEMA CLARO: portada, navegación y bloques interiores. */
+html{color-scheme:light}
+html[data-theme="light"] .brand__logo--light{display:none!important}
+html[data-theme="light"] .brand__logo--dark{display:block!important}
+.site-header,.site-header.is-scrolled,.site-header.menu-open{background:rgba(250,249,246,.97);border-bottom:1px solid rgba(14,43,67,.14);box-shadow:0 5px 25px rgba(8,28,45,.06);backdrop-filter:blur(18px)}
+.site-nav a,.site-header .site-nav a,html[data-theme="light"] .site-header .site-nav a{color:#17324b}
+.site-nav a:hover,.site-nav a.is-current{color:#916426}
+.language-switch{border-color:rgba(16,43,67,.26)}
+.language-option:not(.is-active){color:#16314a}
+.mobile-toggle span{background:#142c42}
+.hero{background:#f7f4ed;color:#112a41}
+.hero__image:after{background:linear-gradient(90deg,rgba(250,249,245,.94) 0%,rgba(250,249,245,.82) 38%,rgba(250,249,245,.45) 73%,rgba(250,249,245,.2) 100%),linear-gradient(0deg,rgba(248,246,242,.72),transparent 32%)}
+.hero__grain{opacity:.03}
+.hero__title{color:#142e46}
+.hero__title em{color:#97703a}
+.hero__eyebrow{color:#95662d}
+.hero__description{color:#263c4c}
+.hero__meta,.hero__counter,.hero__scroll{color:#354a58}
+.hero__side-note{color:rgba(26,48,67,.75)}
+.hero__meta-line,.hero__counter-line,.scroll-line{background:#8b703f}
+.scroll-line:after{border-color:#8b703f}
+.btn--outline-light{color:#16314b;background:rgba(255,255,255,.75);border-color:rgba(18,45,70,.45);backdrop-filter:none}
+.btn--outline-light:hover{background:#fff;border-color:#173550}
+.hero__content{padding-top:176px;padding-bottom:95px}
+.hero__eyebrow{position:static;margin-top:0;margin-bottom:26px}
+@media(max-width:800px){.hero__content{padding-top:174px;padding-bottom:160px}}
+@media(max-width:610px){.hero__content{padding-top:143px;padding-bottom:140px}.hero__eyebrow{margin-top:0;margin-bottom:18px}.hero__title{color:#142e46}}
+@media(max-width:1120px){.site-header.menu-open .site-nav{background:#faf9f6}}

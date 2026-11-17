@@ -1,4 +1,4 @@
-21 PROYECTOS INMOBILIARIOS, S.A. — DEMO WEB BELLAS LUCES
+21 PROYECTOS INMOBILIARIOS, S.A. — DEMO WEB LAS 7 LUCES
 ========================================================
 
 INICIO RÁPIDO
@@ -31,7 +31,7 @@ ACTIVAR BASE DE PROSPECTOS EN GOOGLE SHEETS (NECESARIO PARA ENVIAR)
 5. Autorice el acceso a la hoja, copie el URL que termina en /exec.
 6. Abra config.js y coloque ese URL entre comillas en appsScriptUrl.
 7. Suba los archivos actualizados. Haga una consulta real de prueba
-   y verifique que se creó la pestaña 'Prospectos Bellas Luces'.
+   y verifique que se creó la pestaña 'Prospectos Las 7 Luces'.
 8. Revise permisos: sólo el personal comercial autorizado debe tener
    acceso a los datos y la cuenta Google. Configure controles anti-spam
    adicionales antes de una campaña de publicidad de alto volumen.
@@ -49,10 +49,10 @@ ACTIVAR WHATSAPP Y DATOS EMPRESARIALES
 PUBLICACIÓN, SEO Y VISTA PREVIA EN WHATSAPP
 - Configure un dominio HTTPS en GitHub Pages y póngalo en publicUrl de config.js.
 - En index.html cambie og:image y twitter:image a la URL ABSOLUTA:
-  https://SU-DOMINIO/assets/images/og-bellas-luces.jpg
+  https://SU-DOMINIO/assets/images/og-las-7-luces.jpg
 - Agregue también <link rel="canonical" href="https://SU-DOMINIO/"> en <head>.
 - Actualice robots.txt/sitemap.xml sólo después de confirmar el dominio.
-- La portada para WhatsApp existe en assets/images/og-bellas-luces.jpg
+- La portada para WhatsApp existe en assets/images/og-las-7-luces.jpg
   y está compuesta con un render REAL del material proporcionado.
 - Las características y medidas provienen de los planos arquitectónicos.
   Son componentes individuales y no se anuncian como metraje total.
@@ -71,3 +71,24 @@ DE ARQUITECTURA, no de Proyectos Inmobiliarios, S.A. No se han utilizado
 esos teléfonos como contactos comerciales del desarrollador.
 
 Este sitio representa un concepto de proyecto. No es una oferta contractual.
+
+ACTUALIZACIÓN DE REDES SOCIALES (NOVIEMBRE 2026)
+- Se agregó «Síguenos en» al pie de página en español y «Follow us on» en inglés.
+- Facebook: https://www.facebook.com/profile.php?id=61596248382307
+- Instagram: https://www.instagram.com/pisa21gt/
+- Los botones muestran el azul de Facebook y el degradado característico de Instagram.
+- En el apartado schema.org se incluyeron ambos perfiles como enlaces oficiales.
+- Para actualizar una página ya subida a GitHub, reemplazar en la raíz:
+  index.html, styles.css, app.js y config.js.
+- Mantener todos los demás archivos y carpetas (especialmente assets).
+
+
+ACTUALIZACIÓN NOVIEMBRE 2026 — LAS 7 LUCES
+- Nombre comercial del proyecto corregido en el sitio ES/EN, SEO y redes enlazadas.
+- Se eliminó el selector claro/oscuro: diseño claro único, incluso en la portada.
+- Se renovó la imagen de compartir (OG) y la presentación PDF bajo el nuevo nombre.
+- Facebook e Instagram: cambiar el nombre visible desde las plataformas; subir la web NO cambia nombres en Meta.
+- Los enlaces de Facebook e Instagram conservan sus URLs originales hasta que el cliente confirme nuevos usuarios.
+- Confirmar con el cliente la URL de ubicación: el enlace anterior de Google Maps puede apuntar a una denominación antigua.
+- Si ya existe un Google Sheet conectado, al actualizar Code.gs revisar que su nombre de pestaña coincida con SETTINGS.SHEET_NAME y volver a implementar si cambia el script.
+- El formulario del sitio mantiene su requisito previo de integración con Google Sheets (config.js).

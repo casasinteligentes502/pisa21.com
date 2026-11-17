@@ -1,0 +1,35 @@
+LAS 7 LUCES — ACTUALIZACIÓN DEL SITIO WEB
+Fecha: 17 de noviembre de 2026
+
+SOLICITUD DEL CLIENTE:
+- Nuevo nombre del proyecto: Las 7 Luces (antes identificado con otro nombre).
+- La página debe abrir y permanecer en modo CLARO; no se muestra interruptor de modo oscuro.
+- El nombre nuevo debe estar presente en español e inglés y en los materiales enlazados.
+
+ACTUALIZACIONES REALIZADAS:
+- index.html: nombre comercial nuevo, etiquetas, mapa referencial, SEO, títulos, Schema.org, OG, enlace al PDF y diseño claro.
+- styles.css: diseño claro (incluida la portada), legibilidad, adaptación móvil, logo y separación visual.
+- app.js: textos en inglés, idioma español, formularios, WhatsApp y compartir con nombre nuevo. Sin modo oscuro ni preferencia antigua.
+- assets/images/og-las-7-luces.jpg: nueva tarjeta para compartir en WhatsApp y redes (1.200 x 630 px).
+- assets/documents/Las-7-Luces-Presentacion-Arquitectonica.pdf: presentación de 35 páginas con la denominación actualizada en su página de presentación y metadatos; se mantienen los planos y créditos originales.
+- integraciones/google-sheets/Code.gs: el nombre nuevo se refleja en la descripción y en el nombre de hoja para nuevas instalaciones.
+- Documentos de instrucciones actualizados.
+
+SUBIR A GITHUB PAGES:
+1. Extrae el ZIP antes de subir. Copia el contenido de su interior a la RAÍZ del repositorio, no la carpeta contenedora.
+2. Sube / reemplaza index.html, app.js, styles.css y los archivos nuevos en assets/images y assets/documents.
+3. Si ya usas una integración con Apps Script, NO reemplaces o redespliegues Code.gs sin revisar primero la hoja existente, el nombre de su pestaña y la URL de la aplicación web.
+4. Para mantener el repositorio limpio, elimina las dos rutas antiguas de la raíz assets/ (archivo OG y PDF del nombre anterior). Los nuevos enlaces ya apuntan a los nombres corregidos.
+5. Confirma visualmente la página en español, inglés y teléfono, tras hacer un despliegue nuevo.
+6. Si las previsualizaciones sociales antiguas persisten, usa la herramienta de depuración de Facebook o vuelve a compartir el enlace con una URL nueva; las imágenes OG pueden quedar almacenadas en caché.
+
+REDES SOCIALES: CAMBIO PENDIENTE EN META (NO SE REALIZA AUTOMÁTICAMENTE)
+- Facebook: abrir la página de Proyectos Inmobiliarios 21, S.A. > Editar información / Configuración de la página, y actualizar el nombre de proyecto en presentación, descripción, portada y publicaciones fijadas. Si el cliente desea renombrar la página corporativa completa, confirmar primero el nombre exacto porque puede requerir revisión de Meta.
+- Instagram @pisa21gt: Editar perfil > Nombre: Las 7 Luces (o Las 7 Luces | Proyectos Inmobiliarios 21); actualizar biografía y publicaciones destacadas.
+- Los enlaces de la web continúan siendo https://www.facebook.com/profile.php?id=61596248382307 y https://www.instagram.com/pisa21gt/ . No cambiar el usuario @pisa21gt sin coordinar el cambio en todos los enlaces.
+- No se requieren contraseñas para hacer cambios de texto en la página web. Nunca incluir contraseñas de clientes en ZIPs ni documentos.
+
+PENDIENTES DE CONFIRMACIÓN:
+- El enlace de Google Maps recibido anteriormente puede mostrar la nomenclatura antigua. Confirmar la ubicación exacta o enviar un enlace nuevo antes de divulgarlo como definitivo.
+- Verificar que el sitio tenga correctamente configurado su dominio de publicación y la URL pública para previsualización OG.
+- El formulario necesita la URL real de Apps Script en config.js para registrar solicitudes; en el ZIP está vacío. Si el formulario ya está conectado en producción, preservar su URL.

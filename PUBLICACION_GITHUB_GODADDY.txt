@@ -7,7 +7,7 @@ archivo desde navegador.
 
 1) DESCOMPRIME el ZIP. No subas el ZIP sin extraer.
 2) En https://github.com/new crea un repositorio PUBLICO llamado
-   bellas-luces (puedes usar otro nombre). No necesitas README inicial.
+   las-7-luces (puedes usar otro nombre). No necesitas README inicial.
 3) Dentro del repositorio, Add file > Upload files.
    Arrastra TODOS LOS ARCHIVOS Y CARPETAS que están dentro de la
    carpeta extraída: index.html, app.js, styles.css, config.js,
@@ -38,7 +38,7 @@ archivo desde navegador.
    Para activar el formulario usa integraciones/google-sheets/Code.gs
    según LEEME_INSTRUCCIONES.txt, y agrega la URL /exec en appsScriptUrl.
 9) En index.html cambia og:image y twitter:image de ruta relativa a
-   https://TU-DOMINIO.com/assets/images/og-bellas-luces.jpg
+   https://TU-DOMINIO.com/assets/images/og-las-7-luces.jpg
    y añade <link rel="canonical" href="https://TU-DOMINIO.com/">
 
 IMPORTANTE: los dominios, el teléfono, el correo, el WhatsApp y la
