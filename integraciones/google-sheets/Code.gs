@@ -1,18 +1,18 @@
 /**
- * Bellas Luces — receptor de prospectos para Google Sheets.
+ * Las 7 Luces — receptor de prospectos para Google Sheets.
  * Pegar en Extensiones → Apps Script dentro de la hoja de cálculo de la empresa.
  * Publicar como aplicación web: ejecutar como tú, acceso "Cualquier persona".
  * IMPORTANTE: sólo un propietario autorizado debe abrir la hoja con datos privados.
  */
 const SETTINGS = {
-  SHEET_NAME: 'Prospectos Bellas Luces',
+  SHEET_NAME: 'Prospectos Las 7 Luces',
   // Opcional: si este script NO está vinculado a la hoja, pegar aquí el ID del Sheet.
   SPREADSHEET_ID: '',
 };
 const HEADERS = ['Fecha de registro','Nombre','Apellido','WhatsApp / teléfono','Correo','Modelo de interés','Plazo','Presupuesto','Mensaje','Idioma','Proyecto','Página de origen','Token'];
 
 function doGet() {
-  return HtmlService.createHtmlOutput('<p>Servicio de recepción de prospectos Bellas Luces. Utilice el formulario de la página web.</p>');
+  return HtmlService.createHtmlOutput('<p>Servicio de recepción de prospectos Las 7 Luces. Utilice el formulario de la página web.</p>');
 }
 
 function doPost(e) {
@@ -62,7 +62,7 @@ function doPost(e) {
 
 function response_(token,ok) {
   // El sitio comprueba el token único antes de mostrar el acuse de recepción.
-  const payload=JSON.stringify({type:'bellas-luces-lead',token:token,ok:!!ok});
+  const payload=JSON.stringify({type:'las-7-luces-lead',token:token,ok:!!ok});
   const html='<!doctype html><html><head><meta charset="utf-8"></head><body><script>try{window.parent.postMessage('+payload+',"*")}catch(e){}<\/script></body></html>';
   return HtmlService.createHtmlOutput(html).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
