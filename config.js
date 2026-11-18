@@ -6,11 +6,11 @@ window.SITE_CONFIG = {
   whatsappNumber: '',
   phoneDisplay: '',
   email: '',
-  facebookUrl: '',
-  instagramUrl: '',
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61596248382307',
+  instagramUrl: 'https://www.instagram.com/pisa21gt/',
   tiktokUrl: '',
   // Dominio real, con https:// y sin / final; se usa en Schema.org.
-  publicUrl: '',
+  publicUrl: 'https://www.pisa21.com',
   // URL Google Maps facilitada por el cliente.
   mapsUrl: 'https://maps.app.goo.gl/db6A1wwnMBMN5NWh9'
 };

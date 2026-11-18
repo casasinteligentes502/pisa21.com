@@ -1,0 +1,28 @@
+ACTUALIZACIÓN FACEBOOK / WHATSAPP — LAS 7 LUCES
+Fecha: 17 de noviembre de 2026
+
+Archivos modificados:
+- index.html: título del sitio, URL canónica y etiquetas Open Graph y Twitter con URLs públicas absolutas
+- config.js: publicUrl con el dominio https://www.pisa21.com
+- app.js: título consistente al cambiar entre español e inglés
+- assets/images/og-las-7-luces-20261117.jpg: imagen Open Graph con nuevo nombre de archivo para evitar caché antigua
+
+ANTES DE SUBIR
+- Comprueba que el dominio definitivo sea https://www.pisa21.com/ (incluyendo www), como se configura en los metadatos.
+- Los archivos deben subirse a la RAÍZ del repositorio de GitHub Pages.
+- Conserva la estructura assets/images/. No subas la imagen a otra carpeta.
+
+PARA ACTUALIZAR GITHUB
+1. Sube index.html, config.js y app.js a la raíz de tu repositorio.
+2. Sube og-las-7-luces-20261117.jpg dentro de assets/images/.
+3. Espera que el despliegue de GitHub Pages finalice y abre https://www.pisa21.com/.
+4. Comprueba que https://www.pisa21.com/assets/images/og-las-7-luces-20261117.jpg se abra en el navegador.
+5. En https://developers.facebook.com/tools/debug/ pega https://www.pisa21.com/ y pulsa Depurar / Volver a extraer información.
+6. Crea una NUEVA publicación de prueba con el enlace. Una publicación previa puede conservar la vista previa antigua y no cambiar al actualizar el sitio.
+
+NOTAS
+- No se cambiaron las fotografías, las 35 páginas del PDF, el modo claro ni los enlaces a Facebook / Instagram.
+- Los cambios no se publican automáticamente en GitHub: debe subirlos quien tenga acceso al repositorio.
+- Si GitHub publica con una dirección distinta (por ejemplo sin www), ajusta las URL absolutas antes de subir.
+- La portada antigua de una publicación que tenga texto incrustado en la propia imagen requiere reemplazarla en esa publicación o crear una nueva.
+- Esta corrección no cambia el nombre ni los textos directamente dentro de las cuentas Facebook e Instagram.

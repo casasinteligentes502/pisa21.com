@@ -74,7 +74,7 @@
     $$('[data-placeholder-es]').forEach(el=>{el.placeholder=el.dataset[state.lang === 'es' ? 'placeholderEs' : 'placeholderEn'] || ''});
     $$('[data-alt-es]').forEach(el=>{el.alt=el.dataset[state.lang === 'es' ? 'altEs' : 'altEn'] || el.alt});
     $$('[data-lang]').forEach(b=>{const selected=b.dataset.lang===state.lang;b.classList.toggle('is-active',selected);b.setAttribute('aria-pressed',String(selected))});
-    document.title = state.lang === 'en' ? 'Las 7 Luces | 21 Real Estate Projects — Santa Catarina Pinula' : 'Las 7 Luces | 21 Proyectos Inmobiliarios — Santa Catarina Pinula';
+    document.title = state.lang === 'en' ? 'Las 7 Luces | Proyectos Inmobiliarios 21, S.A.' : 'Las 7 Luces | Proyectos Inmobiliarios 21, S.A.';
     $('meta[name="description"]').setAttribute('content',state.lang==='en' ? 'Explore Las 7 Luces, a contemporary residential architectural concept in Santa Catarina Pinula, Guatemala. Browse floor plans, renderings and request information.' : 'Conoce Las 7 Luces, una propuesta residencial de arquitectura contemporánea en Santa Catarina Pinula, Guatemala. Explora diseños, planos y renders y solicita información.');
     renderGallery();
     try{localStorage.setItem('las7lucesLang',state.lang)}catch(e){}
